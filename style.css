@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+body{
+  background: black;
+  color: white;
+  font: "Verdana";
+}
+.img-fluid{
+  width:100%;
+}
+.container{
+  width: 90%;
+  margin: auto;
+}
+.top{
+  margin-top: 20px;
+}
+.image-container{
+  width: 90%;
+  margin: auto;
+}
+
+.song-image{
+  margin: 30px 0 5px 0;
+  height: 250px;
+}
+.top, .artist-information, .info, .control, .shuffle-and, .image-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ .card{
+   display: flex;
+   flex-direction: column;
+ }
+ .card-text{
+   font-size: 10px;
+ }
+.shuffle-and, .info{
+  width: 80%;
+  margin: auto;
+}
+.shuffle-and{
+  margin-top: 20px;
+}
+.artist-information{
+  flex-direction: column;
+  margin: 10px 0 20px 0;
+}
+#song-name{
+  font-size: 1em;
+}
+
+.info, .audio, .control{
+  margin-bottom: 10px;
+}
+.pause{
+  content: url("pause-circle.svg");
+}
+.audio{
+  display: flex;
+  justify-content: center;
+}
+audio{
+  margin: auto;
+  outline: none;
+}
+#play{
+  height: 80px;
+}
+button{
+  background: grey;
+  border: none;
+  color: white;
+  padding: 2px 4px;
+  outline: none;
+}
+.svg-icons{
+  height: 30px;
+}
+.svg-icons-nav{
+  height: 20px;
+}
+.svg-icons-info{
+  height: 20px;
+}
+.svg-icons-1{
+  height: 20px;
+}
+.svg-icons, #play{
+  filter: invert(100);
+}
+.repeat{
+  content: url("repeat-1.svg");
+}
+#love{
+  height: 29px;
+}
+.love{
+  content: url("red-heart.png");
+  filter: invert(0);
+  height: 29px;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-mute-button
+{
+  display: none;
+}
+audio::-webkit-media-controls-time-remaining-display
+{
+  
+  display: none;
+}
+
+@media (min-width: 768px){
+  *{
+    display: none;
+  }
+}
+ 
